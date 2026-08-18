@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Adicionar filme</title>
+    </head>
+    
+    <body>
+        <a href="index.html">&larr; Voltar</a>
+        
+        <h1>Adicionar filme</h1>
+        
+        <form id="form-filme">
+            <label id="titulo" name="titulo">Título</label>
+            <input id="titulo" name="titulo" type="text"> <br>
+
+            <label id="ano" name="ano">Ano</label>
+            <input id="ano" name="ano" type="number" min="1888" max="2030"> <br>
+
+            <label id="genero" name="genero">Gênero</label> 
+            <input id="genero" name="genero" type="text"> <br>
+
+            <label id="url" name="url">URL do pôster</label> 
+            <input id="url" name="url" type="url"> <br>
+
+            <label id="status" name="status">Status</label>
+            <select id="status" name="status">
+                <option>Quero assistir</option>
+                <option>Não quero assistir</option>
+            </select> <br>
+
+            <label id="nota" name="nota">Nota(1 a 5)</label>
+            <input id="nota" name="nota" type="number" min="0" max="5"> <br>
+
+            <label id="comentario" name="comentario" >Comentário</label>
+            <textarea id="comentario" name="comentario" cols="50" rows="4"></textarea> <br>
+
+            <button id="cancelar" name="cancelar" type="button">Cancelar</button>
+            <button id="salvar" name="salvar" type="submit">Salvar</button>
+        </form>
+    </body>
+</html>
