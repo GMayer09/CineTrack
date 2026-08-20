@@ -4,36 +4,89 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>CineTrack</title>
+        
+        <h1>CineTrack</h1>
+        
+        <input type="search" aria-label="Buscar filme">
+        <button>+Adicionar</button>
+        <section id="buscafilme" aria-live="polite">
+            <article class="card"></article>
+        </section>
     </head>
     
     <body>
-        <a href="adicionar.html">&rarr; Adicionar um filme</a>
+        <nav arial-label="Filtro de status">
+            <button>Todos</button>
+            <button>Assistido</button>
+            <button>Assistindo</button>
+            <button>Quero assistir</button>
+        </nav>
 
-        <h1>CineTrack</h1>
         <p><strong>CineTrack </strong>é o gerenciador pessoal de filmes: registre
             o que já viu, o que está vendo e o que quer ver.
         </p>
-        
-        <h2>Status possíveis</h2>
-        <ul>
-            <li>Assistido</li>
-            <li>Assistindo</li>
-            <li>Quero assistir</li>
-        </ul>
 
-        <h2>Meus filmes favoritos</h2>
-        <ol>
-            <li>A Origem </li>
-            <li>Interstelar</li>
-            <li>Parasita</li>
-        </ol>
+        <main>
+            <section id="lista" aria-live="polite">
+                <article class="card">
+                    <img src="../parte1/img/aOrigem.jpg" alt="aorigem" width="200px">
+                    <h2>A Origem</h2>
+                    <span>2010 - Ficção científica</span> <br>
+                    <span>Nota: ★★★★★</span> <br>
+                    <button>Editar</button>
+                    <button>Remover</button>
+                </article>
 
-        <h2>Sobre a origem</h2>
-        <dl>
-            <dt>Diretor</dt> <dd>Christopher Nolan</dd>
-            <dt>Ano</dt> <dd>2010</dd>
-            <dt>Gênero</dt> <dd>Ficção Científica</dd>
-        </dl>
-        <p>&copy; 2025 CineTrack</p>
+                <article class="card">
+                    <img src="../parte1/img/parasita.jpg" alt="parasita" width="200px">
+                    <h2>Parasita</h2>
+                    <span>2019 - Suspense</span>
+                    <span>Nota: ★★★★★</span> <br>
+                    <button>Editar</button>
+                    <button>Remover</button>          
+                </article>
+                
+                <article class="card">
+                    <img src="../parte1/img/autodacompadecida.jpg" alt="" width="200px">
+                    <h2>O auto da compadecida</h2>
+                    <span>2000 - Comédia</span>
+                    <span>Nota: ★★★★★</span> <br>
+                    <button>Editar</button>
+                    <button>Remover</button>
+                </article>
+                    
+                <article class="card">
+                    <img src="../parte1/img/duna.jpg" alt="duna" width="200px">
+                    <h2>Duna: parte 2</h2>
+                    <span>2024 - Ficção científica</span>
+                    <span>Nota: ★★★★★</span> <br>
+                    <button>Editar</button>
+                    <button>Remover</button>
+                </article>
+                
+                <article class="card">
+                    <img src="../parte1/img/interstelar.png" alt="interstelar" width="200px">
+                    <h2>Interstelar</h2>
+                    <span>2014 - Aventura</span>
+                    <span>Nota: ★★★★★</span> <br>
+                    <button>Editar</button>
+                    <button>Remover</button>
+                </article>
+                
+                <article class="card">
+                    <img src="../parte1/img/cidadededeus.jpg" alt="cidadededeus" width="200px">
+                    <h2>Cidade de Deus</h2>
+                    <span>2002 - Drama</span>
+                    <span>Nota: ★★★★★</span> <br>
+                    <button>Editar</button>
+                    <button>Remover</button>
+                </article>
+            </section>
+        </main>
     </body>
+
+    <footer>
+        <a href="adicionar.html">&rarr; Adicionar um filme</a> <br>
+        <small>&copy; CineTrack - UEM 2026</small> 
+    </footer>
 </html>
